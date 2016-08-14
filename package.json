@@ -2,12 +2,15 @@
   "name": "he-really-said-that",
   "version": "1.0.0",
   "description": "A sampling of the most absurd Donald Trump quotes",
-  "main": "server.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint **/*.js",
+    "test": "NODE_ENV=test mocha -R nyan",
+    "watch": "mocha -w",
+    "start": "NODE_ENV=production nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aaronbini/he-really-said-that/issues"
+  },
+  "engines": {
+    "node": "6.3.1"
   },
   "homepage": "https://github.com/aaronbini/he-really-said-that#readme",
   "devDependencies": {
