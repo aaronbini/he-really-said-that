@@ -1,6 +1,30 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*body {
+  height: 100%;
+} */
+
+
+
 body {
-  height: 100%; /* needed for firefox*/
-  /*background-color: black;*/
+    height: 100%;
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 25px;
+}
+
+footer {
+  /*background-color: #ffb366;*/
+  opacity: 90%;
+  position: absolute;
+  margin-left: 50px;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow:hidden;
 }
 
 header {
@@ -13,8 +37,12 @@ main {
   margin:auto;
 
   /* Sticky footer settings */
-  overflow: auto;
-  padding-bottom: 4rem;
+  /*overflow: auto;
+  padding-bottom: 4rem;*/
+}
+
+p {
+  font-size: 2rem;
 }
 
 #bg-image {
@@ -26,7 +54,7 @@ main {
 }
 
 #bg-image img {
-  opacity: 0.5;
+  opacity: 0.65;
   position: absolute;
   top: 0;
   left: 0;
@@ -57,11 +85,13 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #0066ff;
+  font-weight: 200;
+  color: aqua;
 }
 
-footer {
-  position: absolute;
+/*footer {
+  position: relative;
+  min-height: 100%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -69,10 +99,24 @@ footer {
   background-color: #ffb366;
   opacity: 0.75;
   text-align: center;
+}*/
+
+#main-page {
+  width: 90%;
 }
 
 #get-quotes {
   font-size: 2rem;
+  color: black;
+  opacity: 0.4;
+  background-color: blanchedalmond;
+  margin-right: 100px;
+}
+
+#get-quotes:active {
+  opacity: 0.8
+  color: white;
+  font-weight: 200;
 }
 
 #above-footer-container {
