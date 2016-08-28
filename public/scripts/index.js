@@ -1,18 +1,23 @@
 (function(module){
 
-  function getRandom(array) {
-    var total = array.length - 1;
-    var randomNum = Math.floor(Math.random() * total);
-    return array[randomNum];
-  };
-
   var pageLoad = {};
+
+  pageLoad.pageCount = 0;
+
+  function getQuote(array) {
+    if (pageLoad.pageCount < array.length) {
+      return array[pageLoad.pageCount++];
+    } else {
+      pageLoad.pageCount = 0;
+      return array[pageLoad.pageCount];
+    }
+  };
 
   pageLoad.getQuotes = function () {
     superagent
     .get('../data/quotes.json')
     .then(result => {
-      var quote = getRandom(result.body);
+      var quote = getQuote(result.body);
       quote.audioPath = '/lib/audio/' + quote.audioFile;
       toHtml('quote-template', quote, '#quote-info');
     })
