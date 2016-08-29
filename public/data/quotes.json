@@ -2,7 +2,7 @@
   {
     "title": "Trump's Personal Vietnam",
     "date": "1997-06-06",
-    "summary": "Trump appeared on the Howard Stern Show in 1997 and made these comments about avoiding STD's in the 1980's.",
+    "summary": "Trump appeared on the Howard Stern Show in 1997 and made these comments about avoiding STD's in the 1980s.",
     "audioFile": "personal_vietnam.mp3"
   },
   {
@@ -18,45 +18,63 @@
     "audioFile": "birther.mp3"
   },
   {
-    "title": "Trump's 'Relationship' with African-Americans",
+    "title": "Trump's \"Relationship\" with African-Americans",
     "date": "2011-04-14/2015-11-23",
-    "summary": "Trump in 2011 claimed to have a great relationship with 'The Blacks', as he puts it in this soundbite, but in November 2015 re-tweeted completely bogus crime stats about black-on-white murder rates, possibly originating from a European Neo-Nazi group.",
+    "summary": "Trump in 2011 claimed to have a great relationship with \"The Blacks\", as he puts it in this soundbite, but in November 2015 re-tweeted completely bogus crime stats about black-on-white murder rates, possibly originating from a European Neo-Nazi group.",
     "audioFile": "great_relationship.mp3"
   },
   {
     "title": "Trump's Views on Hillary",
     "date": "2016-08-02",
-    "summary": "Trump refers to Hillary Clinton as 'The Devil' in a campaign speech.",
+    "summary": "Trump referred to Hillary Clinton as \"The Devil\" in a recent campaign speech.",
     "audioFile": "devil.mp3"
   },
   {
     "title": "Trump Believes Judge Not Fit For Duty",
     "date": "2016-06-03",
-    "summary": "Trump doesn't believe that Judge Gonzalo Curiel, who is currently overseeing a class-action lawsuit involving Trump University, can preside over the trial without bias, because 'he's Mexican'.",
+    "summary": "Trump doesn't believe that Judge Gonzalo Curiel, who is currently overseeing a class-action lawsuit involving Trump University, can preside over the trial without bias, because \"he's Mexican\".",
     "audioFile": "judge_comments.mp3"
   },
   {
     "title": "Trump Claims to Witness Muslims Celebrating 9-11",
     "date": "2015-11-22",
-    "summary": "Trump, last fall, claimed to have seen 'thousands' of Muslims celebrating after 9-11 in Jersey City, NJ. All similar rumors were debunked, but when pressed by George Stephanopolous, Trump was unwilling to back away from his claims.",
+    "summary": "Trump, last fall, claimed to have seen \"thousands\" of Muslims celebrating after 9-11 in Jersey City, NJ. All similar rumors were debunked, but when pressed by George Stephanopolous, Trump was unwilling to back away from his claims.",
     "audioFile": "muslims_celebrate.mp3"
   },
   {
     "title": "Trump Claims Barack Obama and Hillary Clinton founded ISIS",
     "date": "2016-08-12",
-    "summary": "Trump, in a campaign speech, claims that President Obama and Hillary Clinton are the 'Co-Founders' of ISIS. When asked for clarification in a subsequent interview, he is unwilling to adjust his wording on the topic.",
+    "summary": "Trump, in a campaign speech, claimed that President Obama and Hillary Clinton are the \"Co-Founders\" of ISIS. When asked for clarification in a subsequent interview, he was unwilling to adjust his wording on the topic.",
     "audioFile": "obama_isis_full.mp3"
   },
   {
     "title": "Trump and the 2nd Amendment",
     "date": "2016-08-09",
-    "summary": "Trump, in a campaign speech, suggest that if Hillary Clinton is elected and picks the next Supreme Court Justice, then 2nd Amendment supporters could take the law into their own hands.",
+    "summary": "Trump, in a campaign speech, suggested that if Hillary Clinton is elected and picks the next Supreme Court Justice, then 2nd Amendment supporters could take the law into their own hands.",
     "audioFile": "second_amendment.mp3"
   },
   {
     "title": "Trump and His Sacrifices",
     "date": "2016-07-30",
-    "summary": "Trump, in an interview with George Stephanopolous, and in response to a speech by Khizr Khan at the Democratic Convention, says that he has made many sacrifices, but his understanding of what sacrifice is appears to be warped.",
+    "summary": "Trump, in an interview with George Stephanopolous, and in response to a speech by Khizr Khan at the Democratic Convention, said that he has made many sacrifices, but he has an interesting understanding of what sacrifice means.",
     "audioFile": "trump_sacrifices.mp3"
+  },
+  {
+    "title": "Trump on Mexico",
+    "date": "2015-06-15",
+    "summary": "Trump, last summer, gave a speech in which he made many claims about Mexican immigrants.",
+    "audioFile": "mexico_sends_drugs.mp3"
+  },
+  {
+    "title": "Trump on Family Bonds",
+    "date": "2006-03-06",
+    "summary": "Trump, while being interviewed in 2006, said he might be dating his daughter, if only she wasn't his daughter.",
+    "audioFile": "trump_daughter.mp3"
+  },
+  {
+    "title": "Trump's Thoughts on Muslims",
+    "date": "2015-12-08",
+    "summary": "Trump called for a complete ban on Muslims entering the country in this campaign speech.",
+    "audioFile": "trump_muslims_ban.mp3"
   }
 ]

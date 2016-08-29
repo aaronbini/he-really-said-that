@@ -45,6 +45,10 @@ p {
   font-size: 2rem;
 }
 
+.quote-style {
+  margin-bottom: 10px;
+}
+
 #bg-image {
   position: fixed;
   top: -50%;
@@ -105,15 +109,18 @@ a {
   width: 90%;
 }
 
-#get-quotes {
+.style-button {
   font-size: 2rem;
   color: black;
   opacity: 0.4;
   background-color: blanchedalmond;
   margin-right: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-width: 250px;
 }
 
-#get-quotes:active {
+.style-button:active {
   opacity: 0.8
   color: white;
   font-weight: 200;
