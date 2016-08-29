@@ -2,15 +2,25 @@
 
   var pageLoad = {};
 
-  pageLoad.pageCount = 0;
+  pageLoad.quoteCount = 0;
+  pageLoad.total = null;
 
   function getQuote(array) {
-    if (pageLoad.pageCount < array.length) {
-      return array[pageLoad.pageCount++];
+    if (pageLoad.quoteCount < array.length) {
+      return array[pageLoad.quoteCount++];
     } else {
-      pageLoad.pageCount = 0;
-      return array[pageLoad.pageCount];
+      pageLoad.quoteCount = 0;
+      return array[pageLoad.quoteCount++];
     }
+  };
+
+  pageLoad.getAndSendQuoteCount = function() {
+    superagent
+    .get('../data/quotes.json')
+    .then(result => {
+      pageLoad.total = result.body.length;
+      $('#quote-count').append(`Total Quotes: ${pageLoad.total}`);
+    });
   };
 
   pageLoad.getQuotes = function () {
@@ -18,6 +28,7 @@
     .get('../data/quotes.json')
     .then(result => {
       var quote = getQuote(result.body);
+      quote.count = pageLoad.quoteCount;
       quote.audioPath = '/lib/audio/' + quote.audioFile;
       toHtml('quote-template', quote, '#quote-info');
     })
@@ -35,6 +46,7 @@
   };
 
   pageLoad.setButtonListener();
+  pageLoad.getAndSendQuoteCount();
 
   module.pageLoad = pageLoad;
 })(window);
