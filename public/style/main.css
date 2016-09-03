@@ -3,20 +3,13 @@ html {
     min-height: 100%;
 }
 
-/*body {
-  height: 100%;
-} */
-
-
-
 body {
     height: 100%;
-    margin: 0 0 100px; /* bottom = footer height */
+    margin: 0 0 100px;
     padding: 25px;
 }
 
 footer {
-  /*background-color: #ffb366;*/
   opacity: 90%;
   position: absolute;
   margin-left: 50px;
@@ -35,18 +28,76 @@ header {
 main {
   width:90%;
   margin:auto;
-
-  /* Sticky footer settings */
-  /*overflow: auto;
-  padding-bottom: 4rem;*/
 }
 
 p {
   font-size: 2rem;
 }
 
+h1,h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 200;
+  color: blanchedalmond;
+}
+
+a:hover {
+  color: coral;
+}
+
+span {
+  margin-right: 20px;
+}
+
+#audio-tag {
+  background-color: blanchedalmond;
+}
+
 .quote-style {
   margin-bottom: 10px;
+}
+
+.style-button {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.4;
+  background-color: blanchedalmond;
+  margin-right: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-width: 250px;
+}
+
+.style-button:active {
+  opacity: 0.8
+  color: white;
+  font-weight: 200;
+}
+
+.arrows {
+  opacity: 0.5;
+  height: 64px;
+  width: 64px;
+}
+
+.circle-arrows {
+  opacity: 0.5;
+  height: 32px;
+  width: 32px;
+  margin-right: 20px;
+  /*margin-left: 20px;*/
+}
+
+#main-page {
+  width: 90%;
+  margin-left: 3%;
 }
 
 #bg-image {
@@ -69,61 +120,10 @@ p {
   min-height: 50%;
 }
 
-/*#bg-image img {
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-}*/
-
-h1,h2 {
-  text-align: center;
-}
-
-h1 {
-  margin-top: 3rem;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 200;
-  color: aqua;
-}
-
-/*footer {
-  position: relative;
-  min-height: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #ffb366;
-  opacity: 0.75;
-  text-align: center;
-}*/
-
-#main-page {
-  width: 90%;
-}
-
-.style-button {
-  font-size: 2rem;
-  color: black;
-  opacity: 0.4;
-  background-color: blanchedalmond;
-  margin-right: 100px;
-  padding-right: 10px;
-  padding-left: 10px;
-  min-width: 250px;
-}
-
-.style-button:active {
-  opacity: 0.8
-  color: white;
-  font-weight: 200;
+#mobile-image {
+    display: none;
+    width: 345px;
+    height: 200px;
 }
 
 #above-footer-container {
@@ -134,10 +134,34 @@ a {
   margin-top: 3%;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
   #bg-image img {
+    display: none;
     left: 30%;
     margin-left: -40%;
+  }
+
+  #mobile-image {
+    display: inline;
+    border-radius: 5%;
+  }
+
+  body {
+    background-color: lightgray;
+    opacity: 0.9;
+  }
+
+  a {
+    color: royalblue;
+  }
+
+  #above-footer-container {
+    background-color: lightgray;
+    opacity: 0.9;
+  }
+
+  #landing-page {
+    text-align: center;
   }
 }
 
