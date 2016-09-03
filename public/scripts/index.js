@@ -2,51 +2,69 @@
 
   var pageLoad = {};
 
-  pageLoad.quoteCount = 0;
   pageLoad.total = null;
 
-  function getQuote(array) {
-    if (pageLoad.quoteCount < array.length) {
-      return array[pageLoad.quoteCount++];
+  function getQuote() {
+    $('footer').hide();
+    var quote = pageLoad.quoteArray[pageLoad.quoteCount];
+    toHtml('quote-template', quote, '#quote-info');
+    $('footer').show();
+  }
+
+  pageLoad.next = function () {
+    if (pageLoad.quoteCount < pageLoad.quoteArray.length - 1) {
+      pageLoad.quoteCount++;
+      getQuote();
     } else {
       pageLoad.quoteCount = 0;
-      return array[pageLoad.quoteCount++];
+      getQuote();
     }
   };
 
-  pageLoad.getAndSendQuoteCount = function() {
-    superagent
-    .get('../data/quotes.json')
-    .then(result => {
-      pageLoad.total = result.body.length;
-      $('#quote-count').append(`Total Quotes: ${pageLoad.total}`);
-    });
+  pageLoad.last = function () {
+    if (pageLoad.quoteCount > 0) {
+      pageLoad.quoteCount--;
+      getQuote();
+    } else {
+      pageLoad.quoteCount = pageLoad.quoteArray.length - 1;
+      getQuote();
+    }
   };
 
   pageLoad.getQuotes = function () {
     superagent
     .get('../data/quotes.json')
     .then(result => {
-      var quote = getQuote(result.body);
-      quote.count = pageLoad.quoteCount;
-      quote.audioPath = '/lib/audio/' + quote.audioFile;
-      toHtml('quote-template', quote, '#quote-info');
+      pageLoad.total = result.body.length;
+      $('#quote-count').append('Total Quotes: ' + pageLoad.total);
+      pageLoad.quoteCount = 0;
+      var arr = result.body.map(function(e,i) {
+        e.count = i + 1;
+        e.audioPath = '/lib/audio/' + e.audioFile;
+        return e;
+      });
+      pageLoad.quoteArray = arr;
+      getQuote();
     })
     .catch(err => {
-      console.log(err);
+      $('#notification-bar').append('<p>' + err + '</p>');
     });
   };
 
   pageLoad.setButtonListener = function() {
     $('#get-quotes').on('click', function(e) {
       e.preventDefault();
-      $('#quote-info').empty();
-      pageLoad.getQuotes();
+      pageLoad.next();
+    });
+
+    $('#last-quote').on('click', function(e) {
+      e.preventDefault();
+      pageLoad.last();
     });
   };
 
   pageLoad.setButtonListener();
-  pageLoad.getAndSendQuoteCount();
+  pageLoad.getQuotes();
 
   module.pageLoad = pageLoad;
 })(window);
