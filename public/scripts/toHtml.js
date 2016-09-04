@@ -9,20 +9,20 @@
   function getCompiledTemplate(name) {
     return superagent
     .get('../hbs/' + name + '.hbs')
-    .then(res => {
+    .then(function(res) {
       return Handlebars.compile(res.text);
     });
   };
 
   function toHtml(filename, obj, location, callback) {
     getCompiledTemplate(filename)
-    .then((handlebarsCompile) => {
+    .then(function(handlebarsCompile) {
       const html = handlebarsCompile(obj);
       $(location).empty();
       $(location).append(html);
       if(callback) callback();
     })
-    .catch(err => {
+    .catch(function(err) {
       console.log(err);
     });
   };

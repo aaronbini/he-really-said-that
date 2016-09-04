@@ -1,0 +1,9 @@
+<!-- fallback for non supporting browsers goes here -->
+<p id="audioplayer_1"><a href="{{this.audioPath}}">Download Audio</a></p>
+<script type="text/javascript" src="/lib/audio-player/audio-player.js"></script>
+<script type="text/javascript">
+  AudioPlayer.setup("./lib/audio-player/player.swf", {
+  width: 300
+});
+  AudioPlayer.embed("audioplayer_1", {soundFile: "{{this.audioPath}}"});
+</script>
