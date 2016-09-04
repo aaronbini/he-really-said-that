@@ -72,7 +72,7 @@ span {
 }
 
 .style-button:active {
-  opacity: 0.8
+  opacity: 0.8;
   color: white;
   font-weight: 200;
 }
