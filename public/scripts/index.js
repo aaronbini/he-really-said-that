@@ -34,7 +34,7 @@
   pageLoad.getQuotes = function () {
     superagent
     .get('../data/quotes.json')
-    .then(result => {
+    .then(function(result) {
       pageLoad.total = result.body.length;
       $('#quote-count').append('Total Quotes: ' + pageLoad.total);
       pageLoad.quoteCount = 0;
@@ -46,7 +46,7 @@
       pageLoad.quoteArray = arr;
       getQuote();
     })
-    .catch(err => {
+    .catch(function(err) {
       $('#notification-bar').append('<p>' + err + '</p>');
     });
   };
