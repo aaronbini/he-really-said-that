@@ -82,5 +82,43 @@
     "date": "03-30-2016",
     "summary": "Trump, in an interview with Chris Matthews, said he was unwilling to rule out the possibility of using nuclear weapons in Europe.",
     "audioFile": "europe_nukes.mp3"
+  },
+  {
+    "title": "Trump Fights With Baby",
+    "date": "2016-08-02",
+    "summary": "At a recent rally where a baby in the audience was crying, Trump claimed to love babies, and then kicked out the woman and her baby.",
+    "audioFile": "fight_with_baby.mp3"
+  },
+  {
+    "title": "Trump Mocks Reporter",
+    "date": "2015-11-24",
+    "summary": "At a rally last year, Trump mocked a disabled New York Times reporter. Though Trump denies knowing the reporter or that he is disabled, PolitiFact has summarily debunked those Trump claims.",
+    "audioFile": "mocks_reporter.mp3"
+  },
+  {
+    "title": "Trump on John McCain",
+    "date": "2015-07-18",
+    "summary": "Trump claimed that John McCain was not a war hero because he was captured. According to Trump, he likes \"people who weren't captured.\"",
+    "audioFile": "mccain_war_hero.mp3"
+  },
+  {
+    "title": "Trump Fights with Megyn Kelly",
+    "date": "2015-08-08",
+    "summary": "After being asked questions about his treatment of women at a Republican debate last year by moderator Megyn Kelly, Trump made these comments in a subsequent interview.",
+    "audioFile": "trump_megyn_kelly.mp3"
+  },
+  {
+    "title": "Trump Incites Violence",
+    "date": "2015/2016",
+    "credit": "Mashable News",
+    "creditUrl": "https://www.youtube.com/watch?v=WIs2L2nUL-0",
+    "summary": "Though Trump claims not to incite violence at his rallies, here is a compilation of him doing exactly that.",
+    "audioFile": "trump_incites_violence.mp3"
+  },
+  {
+    "title": "Trump Claims Election Will Be Rigged",
+    "date": "2016-08-02",
+    "summary": "At a rally in Pennsylvania and then in a subsequent interview with Sean Hannity, Trump claimed that if he loses the election, the only plausible explanation is that the election will have been rigged.",
+    "audioFile": "rigged_election_full.mp3"
   }
 ]
