@@ -5,6 +5,9 @@
   </audio>
     <h5 class="quote-style"><b><em>{{this.title}}</em></b></h4>
     <p class="quote-style">{{this.date}}  |  Quote # {{this.count}}</p>
+    {{#if this.credit}}
+      <a href="this.creditUrl"><p>{{this.credit}}</p></a>
+    {{/if}}
     <p class="quote-style">{{this.summary}}</p>
 
 </div>
